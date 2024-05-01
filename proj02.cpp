@@ -165,6 +165,7 @@ void Watcher() {
     }
 }
 
+// Function for Tribe thread
 void NomadTribe() {
     while (NowYear < 2030) {
         if (NowMonth <= 8) {
@@ -213,6 +214,7 @@ int main() {
     NowYear = 2024;
     NowNumDeer = 2;
     NowHeight = 5.0;
+    NowNumTribe = 3.0;  // adjust
 
 #pragma omp parallel sections
     {
